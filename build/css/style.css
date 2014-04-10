@@ -1,0 +1,135 @@
+/* Libs
+------------------------------------------------------------ */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* Globals
+------------------------------------------------------------ */
+/* Reset
+------------------------------------------------------------ */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+::-moz-selection {
+  background: #fe57a1;
+  color: #fff;
+  text-shadow: none; }
+
+::selection {
+  background: #f15a22;
+  color: #fff;
+  text-shadow: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic; }
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none; }
+
+/* Helper Mixins
+------------------------------------------------------------ */
+/* ==========================================================================
+
+   Buttons
+
+   ========================================================================== */
+/* ==========================================================================
+
+   Vertical Rhythm and Modular Scale with Baseline Grid by Justin Metros
+   // inspired by www.gridlover.net
+
+   ========================================================================== */
+/* Colors
+------------------------------------------------------------ */
+/* Typography
+------------------------------------------------------------ */
+body {
+  font-size: 13px;
+  line-height: 19.5px;
+  color: #565555; }
+
+h1, .alpha {
+  font-size: 89px;
+  line-height: 97.5px;
+  margin-top: 0px;
+  margin-bottom: 19.5px; }
+
+h2, .beta {
+  font-size: 55px;
+  line-height: 58.5px;
+  margin-top: 0px;
+  margin-bottom: 19.5px; }
+
+h3, .gamma {
+  font-size: 34px;
+  line-height: 39px;
+  margin-top: 0px;
+  margin-bottom: 29.25px; }
+
+h4, .delta {
+  font-size: 21px;
+  line-height: 39px;
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
+h5, .epsilon {
+  font-size: 21px;
+  line-height: 39px;
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
+h6, .zeta {
+  font-size: 13px;
+  line-height: 19.5px;
+  margin-top: 19.5px;
+  margin-bottom: 19.5px; }
+
+p, ul, ol {
+  font-size: 13px;
+  line-height: 19.5px;
+  margin-top: 0px;
+  margin-bottom: 19.5px;
+  font-family: helvetica, sans-serif; }
+
+a {
+  font-size: 21px;
+  line-height: 39px;
+  margin-top: 0px;
+  margin-bottom: 19.5px;
+  font-family: helvetica, sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: helvetica, sans-serif; }
+
+/* Partials
+------------------------------------------------------------ */
+/* --------------- Layout ---------------- */
+img {
+  width: 100%;
+  vertical-align: baseline; }
