@@ -133,3 +133,8 @@ h1, h2, h3, h4, h5, h6 {
 img {
   width: 100%;
   vertical-align: baseline; }
+
+header {
+  height: 100px;
+  background-color: black;
+  color: white; }

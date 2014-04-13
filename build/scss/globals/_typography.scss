@@ -1,11 +1,11 @@
 /* Typography
 ------------------------------------------------------------ */
 
-$body-font-size           : 13px;
+$body-font-size           : 20px;
 $body-line-height         : 1.5;
-$scale-factor             : 1.618; // http://modularscale.com/
-$font-head				  : helvetica, sans-serif;
-$font-body				  : helvetica, sans-serif;
+$scale-factor             : 1.5; // http://modularscale.com/
+$font-head				  : "proxima-nova";
+$font-body				  : "proxima-nova";
 
 
 body { @include rhythm(0); 
