@@ -15,7 +15,12 @@
 			<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 
 			<!-- Display the Post's content in a div box. -->
+			<div class="hero">
+				<?php if(is_home() && has_post_thumbnail()) the_post_thumbnail(); ?>
+				
+			</div>
 			<div class="entry">
+
 				<?php the_excerpt(); ?>
 			</div>
 		</div>

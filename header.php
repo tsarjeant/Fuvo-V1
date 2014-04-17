@@ -11,6 +11,7 @@
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/www/css/style.css">
 <script type="text/javascript" src="//use.typekit.net/eor1ixy.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+ <?php wp_head(); ?> 
 </head>
 <body> <!-- closed in footer.php -->
 	<div class="container"> <!-- closed in footer.php -->
