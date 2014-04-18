@@ -10,17 +10,18 @@
 			query_posts('showposts=5&paged='.$page_num); 
 		?>
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-		<div class="">
+		<div class="post-content">
 			<!-- Display the Title as a link to the Post's permalink. -->
-			<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-
-			<!-- Display the Post's content in a div box. -->
+			<!-- <h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2> -->
+			<h3 class="storytitle">
+			<a href="<?php the_permalink() ?>" rel="bookmark">
+			<?php the_title(); ?></a></h3>	
+			<!-- Display the Post's content in two parts. The Hero img/vid followed by the excerpt. -->
 			<div class="hero">
 				<?php if(is_home() && has_post_thumbnail()) the_post_thumbnail(); ?>
-				
+				<?php get_the_post_thumbnail($id, $size, $attr ); ?>
 			</div>
 			<div class="entry">
-
 				<?php the_excerpt(); ?>
 			</div>
 		</div>

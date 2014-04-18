@@ -2,20 +2,27 @@
 <?php /* Template Name: single */ get_header(); ?>
 
 <div class="content">
-	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+	<div class="post-content">
+		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 	
-	<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+		<div class="hero">
+			<?php the_meta(); ?>
+		</div>
+
+		<h3 class="storytitle">
+		<a href="<?php the_permalink() ?>" rel="bookmark">
+		<?php the_title(); ?></a></h3>
+
+		<div class="entry">
+			<?php the_content(); ?>
 	
-	<div class="single-post">
-		<?php the_content(); ?>
+			<?php endwhile; ?>
+
+			<?php else : ?>
+
+			<?php endif; ?>
+		</div>
 	</div>
-	
-	<?php endwhile; ?>
-
-	<?php else : ?>
-
-
-	<?php endif; ?>
 </div>
 
 <?php get_footer(); ?>

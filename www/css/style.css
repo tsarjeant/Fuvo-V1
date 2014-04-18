@@ -75,23 +75,92 @@ body {
   color: #565555; }
 
 a {
-  font-size: 30px;
-  line-height: 30px;
-  margin-top: 0px;
-  margin-bottom: 30px;
-  font-family: "proxima-nova"; }
+  font-family: "proxima-nova", sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "proxima-nova"; }
+  font-family: "proxima-nova", sans-serif; }
+
+a:link {
+  color: black; }
+
+/* unvisited link */
+a:visited {
+  color: black; }
+
+/* visited link */
+a:hover {
+  color: red; }
+
+/* mouse over link */
+a:active {
+  color: red; }
+
+/* selected link */
+h1 {
+  font-size: 2.1em;
+  margin: .3em;
+  color: black; }
+
+h3 {
+  font-size: 1.7em; }
+
+h6 {
+  font-size: .7em;
+  color: black; }
 
 /* Partials
 ------------------------------------------------------------ */
 /* --------------- Layout ---------------- */
-img {
-  width: 100%;
-  vertical-align: baseline; }
+html {
+  margin: 0 auto; }
 
 header {
+  text-align: center;
   height: 100px;
-  background-color: black;
-  color: white; }
+  color: black; }
+
+.content {
+  *zoom: 1;
+  max-width: 60em;
+  margin-left: auto;
+  margin-right: auto; }
+  .content:before, .content:after {
+    content: " ";
+    display: table; }
+  .content:after {
+    clear: both; }
+
+.post-content {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  font-family: "proxima-nova", sans-serif;
+  margin-top: 1em;
+  margin-bottom: 1em; }
+  .post-content:last-child {
+    margin-right: 0; }
+  .post-content p {
+    padding-top: 1em; }
+
+.storytitle {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+  margin-left: 8.5298%;
+  padding-top: 1.2em; }
+  .storytitle:last-child {
+    margin-right: 0; }
+
+.entry {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+  margin-left: 8.5298%; }
+  .entry:last-child {
+    margin-right: 0; }
+
+.post-meta-key {
+  display: none; }

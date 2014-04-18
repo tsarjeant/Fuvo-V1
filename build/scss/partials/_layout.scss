@@ -1,11 +1,50 @@
 /* --------------- Layout ---------------- */
-img {
-    width: 100%;
-    vertical-align:  baseline;
+// img {
+//     width: 100%;
+//     vertical-align:  baseline;
+// }
+html {
+	margin:0 auto;
 }
 
 header {
+	text-align:center;
 	height: 100px;
-	background-color: black;
-	color: white;
+	color: black;
+}
+
+.content {
+	@include outer-container;
+	// $mobile: new-breakpoint(max-width 500px 6);
+	// @include media($mobile) {
+ //  		@include span-columns(3);
+	// }
+}
+
+.post-content {     
+	@include span-columns(12);
+	// @include shift(1);
+	font-family: $font-body;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	p {
+		padding-top: 1em;
+	}
+}
+
+
+
+.storytitle {
+	@include span-columns(10 of 12);
+	@include shift(1);
+	padding-top: 1.2em;
+}
+
+.entry {
+	@include span-columns(10 of 12);
+	@include shift(1);
+}
+
+.post-meta-key {
+	display:none; 
 }

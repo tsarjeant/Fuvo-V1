@@ -4,8 +4,9 @@
 $body-font-size           : 20px;
 $body-line-height         : 1.5;
 $scale-factor             : 1.5; // http://modularscale.com/
-$font-head				  : "proxima-nova";
-$font-body				  : "proxima-nova";
+$font-head				  : "proxima-nova" , sans-serif;
+$font-body				  : "proxima-nova" , sans-serif;
+
 
 
 body { @include rhythm(0); 
@@ -22,12 +23,32 @@ body { @include rhythm(0);
 
 // 	font-family: $font-body;
 // }
-
-a  { @include rhythm(1, 0, 1); 
+// { @include rhythm(1, 0, 1)
+a  { 
 
 	font-family: $font-body;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: $font-head;
+}
+
+a:link {color:black;}      /* unvisited link */
+a:visited {color:black;}  /* visited link */
+a:hover {color:red;}  /* mouse over link */
+a:active {color:red;}  /* selected link */
+
+h1 {
+	font-size: 2.1em;
+	margin: .3em;
+	color: black;
+}
+
+h3 {
+	font-size: 1.7em;
+}
+
+h6 {
+	font-size: .7em;
+	color: black;
 }
