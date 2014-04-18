@@ -18,6 +18,8 @@
 		<header>
 			<a href="<?php echo get_option('home'); ?>" rtitle="<?php bloginfo('name'); ?> Home Page"><h1>FUVO</h1></a>
 			<h3>Future Vocatons</h3>
+			<div class="search">
+				<?php get_search_form(); ?>
+			</div>
 
-			<div class="search"><!--THIS WILL BE A SEARCHBAR INPUT SPANNING THE WIDTH OF THE PAGE --></div>
 		</header>

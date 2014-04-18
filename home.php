@@ -2,7 +2,7 @@
 <?php /* Template Name: home */ get_header(); ?>
 
 
-	<div class="content">
+	<div class="post-content">
 		<!-- Start the Loop. -->
 		<?php
 			$page_num = $paged;
@@ -10,21 +10,21 @@
 			query_posts('showposts=5&paged='.$page_num); 
 		?>
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-		<div class="post-content">
 			<!-- Display the Title as a link to the Post's permalink. -->
 			<!-- <h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2> -->
-			<h3 class="storytitle">
-			<a href="<?php the_permalink() ?>" rel="bookmark">
-			<?php the_title(); ?></a></h3>	
+			
 			<!-- Display the Post's content in two parts. The Hero img/vid followed by the excerpt. -->
-			<div class="hero">
-				<?php if(is_home() && has_post_thumbnail()) the_post_thumbnail(); ?>
-				<?php get_the_post_thumbnail($id, $size, $attr ); ?>
-			</div>
-			<div class="entry">
-				<?php the_excerpt(); ?>
-			</div>
+		<div class="hero">
+		<a href="<?php the_permalink() ?>" rel="bookmark"><?php the_meta(); ?></a>
 		</div>
+		<div class="storytitle">
+			<a href="<?php the_permalink() ?>" rel="bookmark">
+			<h3><?php the_title(); ?></h3></a>
+		</div>
+		<div class="entry">
+			<?php the_excerpt(); ?>
+		</div>
+		
 
 		<!-- Stop The Loop (but note the "else:" - see next line). -->
 		<?php endwhile; else: ?>

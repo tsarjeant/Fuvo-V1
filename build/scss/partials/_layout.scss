@@ -5,6 +5,7 @@
 // }
 html {
 	margin:0 auto;
+	@include outer-container;
 }
 
 header {
@@ -13,19 +14,29 @@ header {
 	color: black;
 }
 
-.content {
-	@include outer-container;
-	// $mobile: new-breakpoint(max-width 500px 6);
-	// @include media($mobile) {
- //  		@include span-columns(3);
-	// }
+
+.search {
+	@include span-columns(12 of 12);
+	margin-top: 1em;
+	form {
+		label {
+			display:none;
+		}
+		input{
+			@include span-columns (12 of 12);
+			height: 4em;
+		}
+
+	}
+}
+#searchsubmit {
+	display:none;
 }
 
 .post-content {     
 	@include span-columns(12);
 	// @include shift(1);
 	font-family: $font-body;
-	margin-top: 1em;
 	margin-bottom: 1em;
 	p {
 		padding-top: 1em;
@@ -33,6 +44,9 @@ header {
 }
 
 
+.hero {
+	@include span-columns(12 of 12)
+}
 
 .storytitle {
 	@include span-columns(10 of 12);
@@ -43,6 +57,7 @@ header {
 .entry {
 	@include span-columns(10 of 12);
 	@include shift(1);
+	margin-bottom:1em;
 }
 
 .post-meta-key {
