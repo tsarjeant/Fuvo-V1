@@ -17,7 +17,7 @@
 		<div class="hero">
 		<a href="<?php the_permalink() ?>" rel="bookmark"><?php the_meta(); ?></a>
 		</div>
-		<div class="storytitle">
+		<div class="title">
 			<a href="<?php the_permalink() ?>" rel="bookmark">
 			<h3><?php the_title(); ?></h3></a>
 		</div>
@@ -37,6 +37,8 @@
 		<?php endif; ?>
 
 	</div>
+
+	
 
 
 <?php get_footer(); ?>

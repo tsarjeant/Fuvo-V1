@@ -48,7 +48,7 @@ header {
 	@include span-columns(12 of 12)
 }
 
-.storytitle {
+.title {
 	@include span-columns(10 of 12);
 	@include shift(1);
 	padding-top: 1.2em;
@@ -62,4 +62,25 @@ header {
 
 .post-meta-key {
 	display:none; 
+}
+
+.tags {
+	@include span-columns(10 of 12);
+	@include shift(1);
+}
+
+/*---- Next Article Highlight ----*/
+
+
+.next-article {
+	@include span-columns(12);
+	float:right;
+}
+
+.next-hero {
+	@include span-columns(4 of 12);
+}
+
+.next-excerpt {
+	@include span-columns(8 of 12);
 }

@@ -168,14 +168,14 @@ header {
   .hero:last-child {
     margin-right: 0; }
 
-.storytitle {
+.title {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 82.94039%;
   margin-left: 8.5298%;
   padding-top: 1.2em; }
-  .storytitle:last-child {
+  .title:last-child {
     margin-right: 0; }
 
 .entry {
@@ -190,3 +190,38 @@ header {
 
 .post-meta-key {
   display: none; }
+
+.tags {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+  margin-left: 8.5298%; }
+  .tags:last-child {
+    margin-right: 0; }
+
+/*---- Next Article Highlight ----*/
+.next-article {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  float: right; }
+  .next-article:last-child {
+    margin-right: 0; }
+
+.next-hero {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%; }
+  .next-hero:last-child {
+    margin-right: 0; }
+
+.next-excerpt {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%; }
+  .next-excerpt:last-child {
+    margin-right: 0; }
