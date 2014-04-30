@@ -15,7 +15,14 @@
 			
 			<!-- Display the Post's content in two parts. The Hero img/vid followed by the excerpt. -->
 		<div class="hero">
-		<a href="<?php the_permalink() ?>" rel="bookmark"><?php the_meta(); ?></a>
+		<a href="<?php the_permalink() ?>" rel="bookmark">
+			<a href="<?php echo get_permalink( $next_post->ID ); ?>">
+			<?php
+				if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+  				the_post_thumbnail('');
+			}?></a>
+
+		</a>
 		</div>
 		<div class="title">
 			<a href="<?php the_permalink() ?>" rel="bookmark">

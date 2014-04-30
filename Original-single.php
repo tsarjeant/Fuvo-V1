@@ -62,7 +62,7 @@
 					$my_excerpt = get_the_excerpt();
 					$nextPost = get_next_post(true);
 					
-					echo $nextPost->$my_excerpt; // Outputs the processed value to the page
+					echo $nextPost; // Outputs the processed value to the page
 				?>
 				
 				<?php endif; ?>	

@@ -109,6 +109,10 @@ h6 {
 /* Partials
 ------------------------------------------------------------ */
 /* --------------- Layout ---------------- */
+img {
+  width: 100%;
+  vertical-align: baseline; }
+
 html {
   margin: 0 auto;
   *zoom: 1;
