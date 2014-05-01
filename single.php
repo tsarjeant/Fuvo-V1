@@ -31,10 +31,7 @@
 		</div> <!-- CLOSE ENTRY -->
 		<div class="tags">
 			<!-- INSTERT CALL FOR TAG LIST HERE -->
-			
-			<?php
-				echo get_the_tag_list('<p>Tags: ',', ','</p>');
-			?>
+			<?php the_tags('Tags: ',' • ','<br />'); ?>
 		</div>
 	</div> <!-- CLOSE POST-CONTENT -->
 
