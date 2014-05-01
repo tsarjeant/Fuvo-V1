@@ -42,7 +42,7 @@
 	<div class="next-article">
  		<?php rewind_posts(); ?>
   			<?php while (have_posts()) : the_post(); ?>
-   			
+   			<h4>Next Vocation:</h4>
    			<div class="next-hero">
 				<?php
 					$nextPost = get_next_post();
