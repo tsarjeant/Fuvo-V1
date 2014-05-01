@@ -27,20 +27,13 @@ add_theme_support( 'post-thumbnails' );
 //}
 
 
-//create a permalink after the excerpt
-function wpfme_replace_excerpt($content) {
-	return str_replace('[...]',
-		'<a class="readmore" href="'. get_permalink() .'">Continue Reading</a>',
-		$content
-	); 
-	}
-	add_filter('the_excerpt', 'wpfme_replace_excerpt');
 
+function new_excerpt_more( $more ) {
+	return ' <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('Continue', 'your-text-domain') . '</a>';
+}
+add_filter( 'excerpt_more', 'new_excerpt_more' );
 
-
-
-
-// function new_excerpt_length($length) {
-// return 5;
-// }
-// ?>
+function custom_excerpt_length( $length ) {
+	return 40;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );

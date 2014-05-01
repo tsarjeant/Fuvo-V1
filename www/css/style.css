@@ -229,3 +229,29 @@ header {
   width: 65.88078%; }
   .next-excerpt:last-child {
     margin-right: 0; }
+
+/*---- Small Article ----*/
+.small-article {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  float: right; }
+  .small-article:last-child {
+    margin-right: 0; }
+
+.small-hero {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%; }
+  .small-hero:last-child {
+    margin-right: 0; }
+
+.small-excerpt {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%; }
+  .small-excerpt:last-child {
+    margin-right: 0; }
