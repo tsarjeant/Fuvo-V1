@@ -7,10 +7,10 @@
 		<?php
 			$page_num = $paged;
 			if ($pagenum='') $pagenum =1;
-			query_posts('showposts=5&paged='.$page_num); 
+			query_posts('showposts=9999&paged='.$page_num); 
 		?>
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-			
+		
 		<div class="hero">
 		<a href="<?php the_permalink() ?>" rel="bookmark">
 			<a href="<?php echo get_permalink( $next_post->ID ); ?>">

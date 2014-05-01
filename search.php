@@ -3,13 +3,15 @@
 
 		<!-- Start the Loop. -->
 
+	<?php printf( __( 'Search Results for: %s', 'Fuvo-V1' ), get_search_query() ); ?>
+
 	<?php while (have_posts()) : the_post(); ?>
-   	<?php printf( __( 'Search Results for: %s', 'twentyfourteen' ), get_search_query() ); ?>	
+   	<div class="results">		
    		<div class="small-hero">
 			<?php
-				$Post = get_post();
-				$thumbnail = get_the_post_thumbnail();
-				next_post_link('%link',''.$thumbnail.'', false);?>
+				if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+  				the_post_thumbnail('');
+			}?>
 		</div><!-- END small-hero -->
 		<div class="small-excerpt">
 				<?php
@@ -19,14 +21,14 @@
 					<br>
 					<?php
 						$my_excerpt = get_the_excerpt();
-						$Post = get_post(true);
+						// $Post = get_post(true);
 						
-						 echo get_the_excerpt($Post); // Outputs the processed value to the page
+						 echo get_the_excerpt(); // Outputs the processed value to the page
 					?>
 		</div><!-- END small-excerpt -->
-   	</div><!-- END small-aricle -->	
+   	
+	</div><!-- END results-->
    	<?php endif; ?>	
    	<?php endwhile; ?>				
-
 
 <?php get_footer(); ?>

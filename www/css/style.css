@@ -130,28 +130,6 @@ header {
   height: 100px;
   color: black; }
 
-.search {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%;
-  margin-top: 1em; }
-  .search:last-child {
-    margin-right: 0; }
-  .search form label {
-    display: none; }
-  .search form input {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 100%;
-    height: 4em; }
-    .search form input:last-child {
-      margin-right: 0; }
-
-#searchsubmit {
-  display: none; }
-
 .post-content {
   float: left;
   display: block;
@@ -230,21 +208,100 @@ header {
   .next-excerpt:last-child {
     margin-right: 0; }
 
-/*---- Small Article ----*/
-.small-article {
+/*--- Searchform.php styles --*/
+.search {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 100%;
-  float: right; }
-  .small-article:last-child {
+  font-size: 15px; }
+  .search:last-child {
+    margin-right: 0; }
+
+.field {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin: 1em 1em;
+  display: inline-block;
+  height: 3.5em;
+  float: left;
+  padding: 0;
+  position: relative; }
+  .field:last-child {
+    margin-right: 0; }
+
+input[type="text"] {
+  height: 1.2em;
+  font-size: 55px;
+  display: inline-block;
+  font-family: "proxima-nova", sans-serif;
+  border: none;
+  outline: none;
+  color: #555;
+  padding: 1px;
+  padding-left: 1em;
+  width: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: none;
+  z-index: 3;
+  transition: width 0.4s cubic-bezier(0, 0.795, 0, 1);
+  cursor: pointer; }
+
+input[type="text"]:focus:hover {
+  border-bottom: 1px solid #BBB; }
+
+input[type="text"]:focus {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+  margin-left: 8.5298%;
+  z-index: 1;
+  border-bottom: 1px solid #BBB;
+  cursor: text; }
+  input[type="text"]:focus:last-child {
+    margin-right: 0; }
+
+input[type="submit"] {
+  height: 67px;
+  width: 63px;
+  display: inline-block;
+  color: red;
+  float: left;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADNQTFRFU1NT9fX1lJSUXl5e1dXVfn5+c3Nz6urqv7+/tLS0iYmJqampn5+fysrK39/faWlp////Vi4ZywAAABF0Uk5T/////////////////////wAlrZliAAABLklEQVR42rSWWRbDIAhFHeOUtN3/ags1zaA4cHrKZ8JFRHwoXkwTvwGP1Qo0bYObAPwiLmbNAHBWFBZlD9j0JxflDViIObNHG/Do8PRHTJk0TezAhv7qloK0JJEBh+F8+U/hopIELOWfiZUCDOZD1RADOQKA75oq4cvVkcT+OdHnqqpQCITWAjnWVgGQUWz12lJuGwGoaWgBKzRVBcCypgUkOAoWgBX/L0CmxN40u6xwcIJ1cOzWYDffp3axsQOyvdkXiH9FKRFwPRHYZUaXMgPLeiW7QhbDRciyLXJaKheCuLbiVoqx1DVRyH26yb0hsuoOFEPsoz+BVE0MRlZNjGZcRQyHYkmMp2hBTIzdkzCTc/pLqOnBrk7/yZdAOq/q5NPBH1f7x7fGP4C3AAMAQrhzX9zhcGsAAAAASUVORK5CYII=) center center no-repeat;
+  text-indent: 10000px;
+  border: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  cursor: pointer;
+  opacity: 0.4;
+  transition: opacity .4s ease; }
+
+input[type="submit"]:hover {
+  opacity: 0.8; }
+
+/*---- Search.php styles ----*/
+.results {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-bottom: 1em; }
+  .results:last-child {
     margin-right: 0; }
 
 .small-hero {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 31.76157%; }
+  width: 31.76157%;
+  float: left; }
   .small-hero:last-child {
     margin-right: 0; }
 
@@ -252,6 +309,11 @@ header {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 65.88078%; }
+  width: 65.88078%;
+  float: right; }
   .small-excerpt:last-child {
     margin-right: 0; }
+
+.relevanssi-query-term {
+  color: black;
+  font-style: bold; }

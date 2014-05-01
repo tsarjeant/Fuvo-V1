@@ -6,5 +6,5 @@
 			<p>&copy; Tyler Sarjeant</p>
 		</div>
 	</footer>
-	</div> <!-- Closing div container -->
+	
 </body>

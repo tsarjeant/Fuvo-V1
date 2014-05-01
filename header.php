@@ -17,9 +17,9 @@
 	<div class="container"> <!-- closed in footer.php -->
 		<header>
 			<a href="<?php echo get_option('home'); ?>" rtitle="<?php bloginfo('name'); ?> Home Page"><h1>FUVO</h1></a>
-			<h3>Future Vocatons</h3>
-			<div class="search">
-				<?php get_search_form(); ?>
-			</div>
+			<h3>Explore Exciting Vocations</h3>
+			
+			<?php get_search_form(); ?>
+			
 
 		</header>
