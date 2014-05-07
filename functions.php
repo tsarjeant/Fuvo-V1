@@ -46,7 +46,7 @@ function my_search_form( $form ) {
 	<div class="field" >
 	<form role="search" method="get" id="searchform" class="searchform" action="' . home_url( '/' ) . '" >
     <div><label class="screen-reader-text" for="s">' . __( '' ) . '</label>
-    <input type="text" value="' . get_search_query() . '" name="s" id="s" placeholder="what are you into?"/>
+    <input type="text" value="' . get_search_query() . '" name="s" id="s" placeholder="search" />
     <input type="submit" id="searchsubmit" value="'. esc_attr__( 'Search' ) .'" />
     </div>
     </form>

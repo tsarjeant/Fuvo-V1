@@ -30,7 +30,7 @@ a  {
 	
 }
 
-h1, h2, h3, h4, h5, h6 {
+ h2, h3, h4, h5, h6 {
 	font-family: $font-head;
 }
 
@@ -39,8 +39,13 @@ a:visited {color:black;}  /* visited link */
 a:active {color:red;}  /* selected link */
 a:hover {color:red;}
 h1 {
-	font-size: 2.1em;
-	margin: .3em;
+	background-image:url('../../img/logo.png');
+	background-repeat:no-repeat;
+	background-position:center;
+	height:8em;
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 h3 {

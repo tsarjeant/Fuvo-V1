@@ -78,7 +78,7 @@ a {
   font-family: "proxima-nova", sans-serif;
   color: black; }
 
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
   font-family: "proxima-nova", sans-serif; }
 
 a:link {
@@ -97,8 +97,13 @@ a:hover {
   color: red; }
 
 h1 {
-  font-size: 2.1em;
-  margin: .3em; }
+  background-image: url("../../img/logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 8em;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px; }
 
 h3 {
   font-size: 1.7em; }
@@ -182,6 +187,23 @@ header {
   .tags:last-child {
     margin-right: 0; }
 
+.scrollToTop {
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  right: 10px; }
+  .scrollToTop p {
+    margin: .3em;
+    color: #555; }
+
+.top-arrow {
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 25px solid #555; }
+
 /*---- Next Article Highlight ----*/
 .next-article {
   float: left;
@@ -242,13 +264,11 @@ input[type="text"] {
   color: #555;
   padding: 1px;
   padding-left: 1em;
-  width: 0px;
   position: absolute;
   top: 0;
   left: 0;
   background: none;
   z-index: 3;
-  transition: width 0.4s cubic-bezier(0, 0.795, 0, 1);
   cursor: pointer; }
 
 input[type="text"]:focus:hover {
@@ -280,8 +300,7 @@ input[type="submit"] {
   left: 0;
   z-index: 2;
   cursor: pointer;
-  opacity: 0.4;
-  transition: opacity .4s ease; }
+  opacity: 0.4; }
 
 input[type="submit"]:hover {
   opacity: 0.8; }
@@ -317,3 +336,12 @@ input[type="submit"]:hover {
 .relevanssi-query-term {
   color: black;
   font-style: bold; }
+
+/*---- footer.php styles ----*/
+footer {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  footer:last-child {
+    margin-right: 0; }

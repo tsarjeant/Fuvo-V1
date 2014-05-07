@@ -3,7 +3,7 @@
 
 
 	<div class="post-content">
-		<!-- Start the Loop. -->
+		<!-- START the post -->
 		<?php
 			$page_num = $paged;
 			if ($pagenum='') $pagenum =1;
@@ -20,16 +20,16 @@
 			}?></a>
 
 		</a>
-		</div><!-- END hero -->
+		</div><!-- end hero -->
 		<div class="title">
 			<a href="<?php the_permalink() ?>" rel="bookmark">
 			<h3><?php the_title(); ?></h3></a>
-		</div> <!-- END title -->
+		</div> <!-- end title -->
 		<div class="entry">
 			<?php the_excerpt(); ?>
-		</div><!-- END entry -->
+		</div><!-- end entry -->
 		
-
+<!-- END the post -->
 		
 		<?php endwhile; else: ?>
 
@@ -37,8 +37,14 @@
 
 		<?php endif; ?>
 
-	</div><!-- END post-content-->
+	</div><!-- end post-content-->
 
+<a href="#" class="scrollToTop" id="Top">
+<div class="top-arrow">
+	
+</div>
+<p>TOP</p>
+</a>
 	
 
 

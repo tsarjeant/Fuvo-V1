@@ -15,6 +15,11 @@ header {
 	color: black;
 }
 
+// * {
+
+// 	pointer-events: none;
+// }
+
 
 // .search {
 // 	@include span-columns(12 of 12);
@@ -45,6 +50,7 @@ header {
 }
 
 
+
 .hero {
 	@include span-columns(12 of 12)
 }
@@ -68,6 +74,27 @@ header {
 .tags {
 	@include span-columns(10 of 12);
 	@include shift(1);
+}
+
+.scrollToTop {
+	display: block;
+	position: fixed;
+	bottom: 20px;
+	right:10px;
+	p {
+		margin:.3em;
+		color: #555;
+	}
+}
+
+.top-arrow {
+	display: block;
+	width: 0; 
+	height: 0; 
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 25px solid #555;
+	
 }
 
 /*---- Next Article Highlight ----*/
@@ -113,13 +140,13 @@ input[type="text"] {
   color: #555;
   padding: 1px;
   padding-left: 1em;
-  width: 0px;
+  // width: 0px;
   position: absolute;
   top: 0;
   left: 0;
   background: none;
   z-index: 3;
-  transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+  // transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
   cursor: pointer;
 }
 
@@ -149,7 +176,7 @@ input[type="submit"] {
   z-index: 2;
   cursor: pointer;
   opacity: 0.4;
-  transition: opacity .4s ease;
+  // transition: opacity .4s ease;
 }
 
 input[type="submit"]:hover {
@@ -177,4 +204,11 @@ input[type="submit"]:hover {
 .relevanssi-query-term {
 	color:black;
 	font-style: bold;
+}
+
+
+/*---- footer.php styles ----*/
+
+footer {
+	@include span-columns(12 of 12);
 }
