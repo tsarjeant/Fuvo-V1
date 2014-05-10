@@ -1,1 +1,1 @@
-$(document).ready(function(){$("#Top").click(function(o){$("html, body").animate({scrollTop:"0px"},800)})});
+$(function(){$("#Top").click(function(){$("html,body").animate({scrollTop:"0px"},800)})});

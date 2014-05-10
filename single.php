@@ -39,7 +39,8 @@
 	<div class="next-article">
  		<?php rewind_posts(); ?>
   			<?php while (have_posts()) : the_post(); ?>
-   			<h4>Next Vocation:</h4>
+   			<!-- <h4>Next Vocation:</h4> -->
+   			<hr>
    			<div class="next-hero">
 				<?php
 					$nextPost = get_next_post();
@@ -49,6 +50,7 @@
 			</div><!-- END NEXT-HERO -->
 			
 			<div class="next-excerpt">
+				
 				<?php
 				$next_post = get_next_post();
 				if (!empty( $next_post )): ?>

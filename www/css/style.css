@@ -135,6 +135,9 @@ header {
   height: 100px;
   color: black; }
 
+hr {
+  margin: 0; }
+
 .post-content {
   float: left;
   display: block;
@@ -190,7 +193,7 @@ header {
 .scrollToTop {
   display: block;
   position: fixed;
-  bottom: 20px;
+  bottom: 60px;
   right: 10px; }
   .scrollToTop p {
     margin: .3em;
@@ -342,6 +345,16 @@ footer {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 1em; }
   footer:last-child {
     margin-right: 0; }
+
+.footer-content {
+  margin-top: 1em; }
+
+.footer-links {
+  float: left; }
+
+.copyright {
+  float: right; }

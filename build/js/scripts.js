@@ -1,12 +1,9 @@
 
-$(document).ready(function(){	
-
+$(function(){
 	$('#Top').click(
-	        function (e) {
-	            $('html, body').animate({scrollTop: '0px'}, 800);
-	        }
-	    );
-
-
+			function () {
+        $('html,body').animate({scrollTop: '0px'}, 800);
+			}
+		);
 });
 

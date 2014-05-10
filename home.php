@@ -7,10 +7,10 @@
 		<?php
 			$page_num = $paged;
 			if ($pagenum='') $pagenum =1;
-			query_posts('showposts=9999&paged='.$page_num); 
+			query_posts('showposts=9999&paged='.$page_num);
 		?>
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-		
+
 		<div class="hero">
 		<a href="<?php the_permalink() ?>" rel="bookmark">
 			<a href="<?php echo get_permalink( $next_post->ID ); ?>">
@@ -28,9 +28,9 @@
 		<div class="entry">
 			<?php the_excerpt(); ?>
 		</div><!-- end entry -->
-		
+
 <!-- END the post -->
-		
+
 		<?php endwhile; else: ?>
 
 		<p>Sorry, no posts matched your criteria.</p>
@@ -39,13 +39,12 @@
 
 	</div><!-- end post-content-->
 
-<a href="#" class="scrollToTop" id="Top">
-<div class="top-arrow">
-	
+<div class="scrollToTop">
+	<a href="#"  id="Top">
+		<div class="top-arrow">
+		</div>
+		<p>TOP</p>
+	</a>
 </div>
-<p>TOP</p>
-</a>
-	
-
 
 <?php get_footer(); ?>
