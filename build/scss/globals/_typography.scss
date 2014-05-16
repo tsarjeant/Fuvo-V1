@@ -9,7 +9,7 @@ $font-body				  : "proxima-nova" , sans-serif;
 
 
 
-body { @include rhythm(0); 
+body { @include rhythm(0);
 	color: $color-text;
 }
 
@@ -19,19 +19,23 @@ body { @include rhythm(0);
 // h4,.delta   { @include rhythm(1, 0, 0); }
 // h5,.epsilon { @include rhythm(1, 0, 0); }
 // h6,.zeta    { @include rhythm(0, 1, 1); }
-// p, ul, ol   { @include rhythm(0, 0, 1); 
+// p, ul, ol   { @include rhythm(0, 0, 1);
 
 // 	font-family: $font-body;
 // }
 // { @include rhythm(1, 0, 1)
-a  { 
+a  {
 	font-family: $font-head;
 	color: black;
-	
+
 }
 
  h2, h3, h4, h5, h6 {
 	font-family: $font-head;
+}
+
+p {
+	font-family: $font-body;
 }
 
 a:link {color:black;}      /* unvisited link */

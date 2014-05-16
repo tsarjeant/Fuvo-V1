@@ -1,6 +1,6 @@
 /******************************************************************
 Theme Name: SteamTrain
-Description: A very clean and simple theme for text heavy content.
+Description: A very clean and simple theme for text and video content.
 Author: Tyler Sarjeant
 Author URI: http://www.tylersarjeant.com
 Version: 1
@@ -8,9 +8,9 @@ Version: 1
 /******************************************************************
 DO NOT MAKE ANY CSS EDITS HERE
 /******************************************************************
-This version of the style dot css file is not the primary style sheet. 
+This version of the style dot css file is not the primary style sheet.
 This theme is built utilizing SASS and the splendor that Bourbon Neat has to offer.
-That being said all the css will be compiled in the included build file. 
+That being said all the css will be compiled in the included build file.
 
 
 *******************************************************************/

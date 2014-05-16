@@ -81,6 +81,9 @@ a {
 h2, h3, h4, h5, h6 {
   font-family: "proxima-nova", sans-serif; }
 
+p {
+  font-family: "proxima-nova", sans-serif; }
+
 a:link {
   color: black; }
 
@@ -132,7 +135,7 @@ html {
 
 header {
   text-align: center;
-  height: 100px;
+  height: 171px;
   color: black; }
 
 hr {

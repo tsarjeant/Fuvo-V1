@@ -43,6 +43,7 @@
 			while( $query2->have_posts() ) {
 				$query2->next_post();
 				get_the_title($query2->post->ID );
+				get_the_excerpt($query2->post->the_excerpt);
 		}?>
 
 		<hr>
@@ -57,7 +58,10 @@
 		<div class="next-excerpt">
 				<?php next_post_link( ); ?>
 				<br>
-				<?php the_excerpt(); ?>
+				<?php
+						$my_excerpt = get_the_excerpt();
+						 echo get_the_excerpt();
+					?>
 		</div><!-- END NEXT-EXCERPT -->
 
 	</div><!-- END NEXT-ARTICLE -->

@@ -1,4 +1,4 @@
-<?php 
+<?php
 // remove junk from head
 remove_action('wp_head', 'rsd_link');
 remove_action('wp_head', 'wp_generator');
@@ -13,7 +13,7 @@ remove_action('wp_head', 'adjacent_posts_rel_link', 10, 0);
 
 
 
-add_theme_support( 'post-thumbnails' ); 
+add_theme_support( 'post-thumbnails' );
 
 
 // Create custom sizes
@@ -58,3 +58,6 @@ function my_search_form( $form ) {
 
 add_filter( 'get_search_form', 'my_search_form' );
 
+
+
+?>
